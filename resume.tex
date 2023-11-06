@@ -1,19 +1,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Developer CV
-% LaTeX Class
-% Version 2.0 (12/10/23)
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
 %
-% This class originates from:
-% http://www.LaTeXTemplates.com
+% This template originates from:
+% https://www.LaTeXTemplates.com
 %
-% Authors:
-% Omar Roldan
-% Based on a template by  Jan Vorisek (jan@vorisek.me)
-% Based on a template by Jan Küster (info@jankuester.com)
-% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
 %
 % License:
-% The MIT License (see included LICENSE file)
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -21,188 +21,105 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
-\usepackage{multicol}
-\setlength{\columnsep}{0mm}
-%----------------------------------------------------------------------------------------
-\usepackage{lipsum}  
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{resume} % Use the resume class
 
+\usepackage{ebgaramond} % Use the EB Garamond font
+
+%------------------------------------------------
+
+\name{John Smith} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{123 Broadway \\ City, State 12345} % Main address
+
+\address{123 Pleasant Lane \\ City, State 12345} % A secondary address (optional)
+
+\address{(011)~$\cdot$~899~$\cdot$~9881 \\ john@LaTeXTemplates.com} % Contact information
+
+%----------------------------------------------------------------------------------------
 
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%	TITLE AND CONTACT INFORMATION
+%	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.5\textwidth} 
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+\begin{rSection}{Education}
 	
-	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Your Name Here}}}} % First name
+	\textbf{University of California, Berkeley} \hfill \textit{June 2004} \\ 
+	B.S. in Computer Science \& Engineering \\
+	Minor in Linguistics \smallskip \\
+	Member of Eta Kappa Nu \\
+	Member of Upsilon Pi Epsilon \\
+	Overall GPA: 5.678
 	
-	\vspace{6pt}
-	
-	{\Large Developer $\sim$ Engineer} % Career or current job title
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
-	\icon{Globe}{11}{\href{http://www.google.com}{portafolio.com}}\\ 
-    \icon{Phone}{11}{11 1111 1111}\\
-    \icon{MapMarker}{11}{City, Country}\\
-	
-\end{minipage}
-\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	\icon{Envelope}{11}{\href{mailto:email@example.com}{email.email@example.com}}\\	
-    \icon{Github}{11}{\href{https://github.com/uma-dev}{github.com/uma-dev}}\\
-    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com}{/in/your-personal-url}}\\    
-    
-\end{minipage}
-
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.46\textwidth}
-    \cvsect{Summary}
-	\vspace{-6pt}
- 
-    %Dummy text
-	\lipsum[1][1-5] \\
-\end{minipage}
-\hfill % Whitespace between
-\begin{minipage}[t]{0.465\textwidth}
-    \cvsect{Skills}
-    \vspace{-6pt}
-    
-    \begin{minipage}[t]{0.2\textwidth}
-        \textbf{Languages:}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.73\textwidth}
-      Java, SQL, Python, JavaScript, HTML, C++, C.  
-    \end{minipage}
-    \vspace{4mm}
-    
-    \begin{minipage}[t]{0.2\textwidth}
-        \textbf{Technologies:}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[t]{0.73\textwidth}
-      GCP, Docker, Kubernetes, Spark, Hadoop, Hive.
-    \end{minipage}
-    
-\end{minipage}
+\begin{rSection}{Experience}
+
+	\begin{rSubsection}{ACME, Inc}{October 2010 - Present}{Web Developer}{Palo Alto, CA}
+		\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
+		\item Donec et mollis dolor. Praesent et diam eget libero Adobe Coldfusion egestas mattis sit amet vitae augue.
+		\item Nam tincidunt congue enim, ut porta lorem Microsoft SQL lacinia consectetur.
+		\item Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		\item Pellentesque auctor nisi id magna consequat JavaScript sagittis.
+		\item Aliquam at massa ipsum. Quisque bash bibendum purus convallis nulla ultrices ultricies.
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	\begin{rSubsection}{AJAX Hosting}{December 2009 - October 2010}{Lead Developer}{Austin, TX}
+		\item Aenean ut gravida lorem. Ut turpis felis, Perl pulvinar a semper sed, adipiscing id dolor.
+		\item Curabitur dapibus enim sit amet elit pharetra tincidunt website feugiat nisl imperdiet. Ut convallis AJAX libero in urna ultrices accumsan.
+		\item Cum sociis natoque penatibus et magnis dis MySQL parturient montes, nascetur ridiculus mus.
+		\item In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+		\item Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper.
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	\begin{rSubsection}{TinySoft}{January 2008 - April 2010}{Web Designer \& Developer}{Gainesville, GA}
+		\item Vivamus PostgreSQL fermentum semper porta. Nunc diam velit PHP, adipiscing ut tristique vitae
+		\item Maecenas convallis ullamcorper ultricies stylesheets.
+		\item Quisque mi metus, unit tests CSS ornare sit amet fermentum et, tincidunt et orci.
+		\item Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id
+	\end{rSubsection}
+
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	Projects
+%	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
-\cvsect{Projects}
-\begin{entrylist}
-    \entry
-		{Technology}
-		{My project 1}
-		{github.com link}
-		{%Dummy text 
-        \lipsum[1][1-3]}
-    \entry
-		{Technology}
-		{My project 2}
-		{github.com link}
-		{%Dummy text 
-        \lipsum[1][1-3]}
-	\entry
-		{Technology}
-		{My project 3}
-		{github.com link}
-		{%Dummy text 
-        \lipsum[1][1-3]}
-    \entry
-		{Technology}
-		{My project 4}
-		{github.com link}
-		{%Dummy text 
-        \lipsum[1][1-3]}
-\end{entrylist}
+
+\begin{rSection}{Technical Strengths}
+
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+		Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
+		Protocols \& APIs & XML, JSON, SOAP, REST \\
+		Databases & MySQL, PostgreSQL, Microsoft SQL \\
+		Tools & SVN, Vim, Emacs
+	\end{tabular}
+
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION
+%	EXAMPLE SECTION
 %----------------------------------------------------------------------------------------
-\vspace{-10 pt}
-\cvsect{Education}
-\begin{entrylist}
-    \entry
-		{3/2023 - x/2023}
-		{\lipsum[1][1] }
-		{School}
-		{Enrolled, part time program for development}
-    \entry
-		{x/2023 - x/2023}
-		{Professional Certificate}
-		{School}
-		{\lipsum[1][1]}
-	\entry
-		{x/2023 - x/2023}
-		{Certificate}
-		{School}
-		{\lipsum[1][2]}
-	\entry
-		{x/2023 - x/2023}
-		{Engineer}
-		{School}
-		{\lipsum[1][2]}
-\end{entrylist}
 
-%----------------------------------------------------------------------------------------
-%	EXPERIENCE
-%----------------------------------------------------------------------------------------
-\vspace{-10 pt}
-\cvsect{Experience}
-\begin{entrylist}
-	\entry
-        {x/2023 -- x/2023}
-		{\lipsum[1][1]}
-		{Company}
-		{\vspace{-10pt}
-        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-            \item \lipsum[1][1-2]
-            \item \lipsum[1][3-4]
-        \end{itemize} 
-        \texttt{SQL} \slashsep \texttt{Excel}}
-	\entry
-		{x/2023 -- x/2023}
-		{\lipsum[1][1]}
-		{Company}
-		{\vspace{-10pt}
-        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-            \item \lipsum[1][1-2]
-            \item \lipsum[1][3-4]
-        \end{itemize} 
-        \texttt{SQL} \slashsep \texttt{Excel}}
-	\entry
-		{x/2023 -- x/2023 \\\footnotesize{scholarship holder}}
-		{\lipsum[1][1]}
-		{Company}
-		{\vspace{-10pt}
-        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
-            \item \lipsum[1][1-2]
-            \item \lipsum[1][3-4]
-        \end{itemize} 
-        \texttt{SQL} \slashsep \texttt{Excel}}
-\end{entrylist}
+%\begin{rSection}{Section Name}
 
-%----------------------------------------------------------------------------------------
-%	LANGUAGES
-%----------------------------------------------------------------------------------------
-\vspace{-10 pt}
-	\cvsect{Languages}
-    \vspace{-6pt}
-    
-    \hspace{26mm} \textbf{English} - B2+, \textbf{ Spanish} - native
+	%Section content\ldots
+
+%\end{rSection}
 
 %----------------------------------------------------------------------------------------
 
