@@ -50,10 +50,10 @@
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 
 \geometry{
-	top=0.6in, % Top margin
-	bottom=0.6in, % Bottom margin
-	left=0.75in, % Left margin
-	right=0.75in, % Right margin
+	top=0.25in, % Top margin
+	bottom=0.25in, % Bottom margin
+	left=0.5in, % Left margin
+	right=0.5in, % Right margin
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 
@@ -125,7 +125,7 @@
 	\medskip % Vertical whitespace
 	\hrule % Horizontal rule
 	\begin{list}{}{ % List to indent the entire content of the section
-		\setlength{\leftmargin}{1.5em} % Indent to the left of the list
+		\setlength{\leftmargin}{1em} % Indent to the left of the list
 	}
 	\item[] % Empty list item to enable indentation
 }{
@@ -147,5 +147,5 @@
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
 }{
 	\end{list}
-	\vspace{0.5em} % Vertical whitespace after the end of the list
+	\vspace{0em} % Vertical whitespace after the end of the list
 }
