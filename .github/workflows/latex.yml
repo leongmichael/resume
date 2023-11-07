@@ -18,10 +18,10 @@ jobs:
         with:
           root_file: resume.tex
 
-      - name: Install latexmk
+      - name: Install Full TeX Live
         run: |
           sudo apt-get update
-          sudo apt-get install -y latexmk
+          sudo apt-get install -y texlive-full
 
       - name: Compile LaTeX document
         run: |
