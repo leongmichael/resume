@@ -18,10 +18,10 @@ jobs:
       - name: Install TeX Live
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: path/to/your/document.tex
+          root_file: ../../resume.tex
 
       - name: Compile LaTeX document
-        run: latexmk -pdf path/to/your/document.tex
+        run: latexmk -pdf ../../resume.tex
 
       - name: Commit PDF to repository
         run: |
