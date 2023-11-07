@@ -24,7 +24,9 @@ jobs:
           sudo apt-get install -y latexmk
 
       - name: Compile LaTeX document
-        run: latexmk -pdf resume.tex
+        run: |
+          mkdir out
+          latexmk -pdf -outdir=out -interaction=nonstopmode resume.tex
 
       - name: Commit PDF to repository
         run: |
