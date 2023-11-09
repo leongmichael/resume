@@ -39,6 +39,16 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git fetch
+          git checkout main
           git add resume.pdf
           git commit -m "Automatically update PDF"
-          git push
+          git push origin main
+
+          git fetch
+          git checkout prod
+          git add resume.pdf
+          git commit -m "Automatically update PDF"
+          git push origin prod
+
+
