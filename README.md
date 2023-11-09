@@ -1,1 +1,1 @@
-## [View Resume](./resume.pdf)
+# [View Resume](./resume.pdf)

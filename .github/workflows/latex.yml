@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - '**.tex'
+      - '**.yml'
 
 jobs:
   build-and-commit-pdf:
@@ -18,7 +19,7 @@ jobs:
       - name: Install TeX Live
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: resume.tex
+          root_file: tex/resume.tex
 
       - name: Install Full TeX Live
         run: |
@@ -28,7 +29,7 @@ jobs:
       - name: Compile LaTeX document
         run: |
           mkdir out
-          latexmk -pdf -outdir=out -interaction=nonstopmode resume.tex
+          latexmk -pdf -outdir=out -interaction=nonstopmode tex/resume.tex
 
       - name: Commit PDF to repository
         run: |
