@@ -144,7 +144,7 @@
 	}%
 	\smallskip % Vertical whitespace
 	\begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
+		\setlength{\itemsep}{-0.55em} \vspace{-0.55em} % Reduce vertical spacing between items in the list for a tighter look
 }{
 	\end{list}
 	\vspace{0em} % Vertical whitespace after the end of the list
